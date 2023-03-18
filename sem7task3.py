@@ -22,3 +22,6 @@ class TestSetUpText(unittest.TestCase):
     def tearDown(self):
         os.remove(r'C:\Users\Acer\Desktop\taskpythyo\mr_chogich\text.txt')
         os.rmdir(r'C:\Users\Acer\Desktop\taskpythyo\mr_chogich')
+
+if __name__ == 'main'
+    unittest.main()
