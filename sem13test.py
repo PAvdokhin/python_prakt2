@@ -28,3 +28,20 @@ class CorpusTest(unittest.TestCase):
 
     def test_num_sents(self):
         self.assertEqual(len(self.test_corpus), len(self.corpus._sentences))
+
+        def test_sentences(self):
+            for i in range(len(self.corpus._sentences)):
+                sent_1 = self.corpus._sentences[i]._sentence
+                sent_2 = self.test_corpus[i][0]
+                self.assertEqual(sent_1, sent_2)
+
+        def test_words(self):
+            for i in range(len(self.corpus._sentences)):
+                sent_1 = self.corpus._sentences[i]._wordforms
+                sent_2 = self.test_corpus[i][1]
+                wordCount = len(sent_1)
+                for j in range(wordCount):
+                    self.assertEqual(sent_1[j]._wordform, sent_2[j][0])
+
+    if __name__ == '__main__':
+        unittest.main()
