@@ -14,6 +14,9 @@ class Oval(Figure):
         self.length = length
         self.width = width
 
+    def change_color(self, color):
+        self.color = color
+
     def characteristics(self):
         print(f'Oval: color - {self.color}, length - {self.length}, width - {self.width}')
 
@@ -22,6 +25,9 @@ class Square(Figure):
     def __init__(self, length):
         super().__init__()
         self.length = length
+
+    def change_color(self, color):
+        self.color = color
     def characteristics(self):
         print(f'Square: color - {self.color}, length - {self.length}')
 
